@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Horizon University</title>
+    <meta name="description" content="University Admissions Assignment">
+    <meta name="author" content="Agustina Echegaray">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Fav Icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header id="top">
+        <img src="images/logo1x.png" alt="logo">
+		<span>Horizon University</span>
+        <a href="#navlinks">&#9776;</a>
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav id="navlinks">
+        <a href="#top">&#10005;</a>
+        <ul>
+            <li><a href="#">Students</a></li>
+            <li class="active"><a href="#">Apply</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Campus</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+        <h1>Application Form</h1>
+        <p>Please fill out the information below to complete your application. We’re excited 
+        to learn more about you. Our admissions team is here to guide you every step of the way, 
+        so don’t hesitate to reach out if you have any questions.</p>
+
+        <form method="GET" action="thanks.html" class="myForm" autocomplete="on">
+            
+            <fieldset class="contact-info">
+                <legend>Contact Information</legend>
+                    <label>First Name<input type="text" name="fname" autocomplete="given-name" required title="Enter First Name"></label>
+                    <label>Last Name<input type="text" name="lname" autocomplete="family-name" required title="Enter Last Name"></label>
+                    <label>Email<input type="email" name="email" autocomplete="email" required placeholder="example@.com" title="Enter Email"></label>
+                    <label>Cell Phone<input type="tel" name="phone" autocomplete="tel" required placeholder="987-555-1234"title="Enter Cell Phone"></label>
+                    <label>Address<input type="text" name="address" autocomplete="street-address" title="Enter Address"></label>
+                    <label>City<input type="text" name="city" autocomplete="address-level2" title="Enter City"></label>
+                    <label>State<input type="text" name="state" autocomplete="address-level1" title="Enter State"></label>
+                    <label>Zip Code<input type="tel" name="zip" autocomplete="postal-code" title="Enter Zip Code"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Communication Preferences</legend>
+                    <label><input type="radio" name="contact-method" value="email"> Send Email</label><br>
+                    <label><input type="radio" name="contact-method" value="phone"> Send Text Messages</label><br>
+                    <label><input type="radio" name="contact-method" value="mail"> Send Mail</label><br>
+            </fieldset>
+
+            <fieldset class="previous-school-info">
+                <legend>Previous School Information</legend>
+                    <label>School Type</label>
+                        <select name="previous-school" required>
+                            <option value="" disabled selected>Please Select</option>
+                            <option value="highschool">High School</option>
+                            <option value="college">College</option>
+                            <option value="university">University</option>
+                        </select>
+
+                    <label>High School Graduation Date:</label>
+                    <input type="date" name="grad-date" required>
+            </fieldset>
+
+            <fieldset>
+            <legend>Education Completed</legend>
+                <label><input type="checkbox" name="high school" value="high-school"> High School Diploma</label><br>
+                <label><input type="checkbox" name="associates" value="associates"> Associate's Degree</label><br>
+                <label><input type="checkbox" name="bachelors" value="bachelors"> Bachelor's Degree</label><br>
+                <label><input type="checkbox" name="masters" value="masters"> Master's Degree</label><br>
+            </fieldset>
+
+            <fieldset class="account-info">
+                <legend>Account Information</legend>
+                    <label>Username (5-10 uppercase or lowercase letters)<input type="text" pattern="[A-Za-z]{5,10}" required minlength="5" maxlength="10" title="Enter a username with 5-10 letters only"></label>
+                    <label>Password (at least 6 characters long)<input type="password" required minlength="6" title="Password must be at least 6 characters long"></label>
+            </fieldset>
+           
+            <input type="submit" value="Complete My Application">
+        </form>
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p class="legal">&copy; 2024</span> &bull; University Admissions &bull; Agustina Echegaray</p>
+    </footer>
+</div> <!-- end footer wrapper -->
+   
+</body>
+</html> 

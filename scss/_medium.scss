@@ -1,0 +1,24 @@
+/* NAVIGATION STUFF GOES HERE  */
+
+body {
+    display: block;
+}
+
+#top a, #navlinks > a {
+    display: none;
+}
+
+nav {
+    height: auto;
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    li a {
+        border: none;
+    }
+    li a:hover {
+        background-color: white;
+        border-bottom: 3px solid $tertiaryColor;
+    }
+}
